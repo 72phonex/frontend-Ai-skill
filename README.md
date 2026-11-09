@@ -101,12 +101,4 @@ Start a new session and ask the agent to build or improve a frontend from a shor
 - [OpenAI skills for ChatGPT and Codex](https://learn.chatgpt.com/docs/build-skills)
 - [Cursor Agent Skills](https://cursor.com/docs/skills)
 
-## Acknowledgments
 
-The following public MIT-licensed repositories informed the general workflows in this project:
-
-- [nateherkai/scroll-craft](https://github.com/nateherkai/scroll-craft) — scroll-story planning, layered composition, and responsive motion.
-- [oil-oil/oil-ui](https://github.com/oil-oil/oil-ui) — visual direction, hierarchy-first design, and screenshot-based review.
-- [superdesigndev/superdesign-skill](https://github.com/superdesigndev/superdesign-skill) — optional design-canvas exploration and design-system workflows.
-
-Their license declarations were checked in the upstream repositories. This project does not include upstream code or assets. If code or assets are added later, verify their current license and preserve any required notices and individual asset terms. The upstream Superdesign instructions use an unpinned `npx` package command; this project does not copy or automatically run it. Any future tool installation or hosted-service use requires user approval and a reviewed, pinned package version.
