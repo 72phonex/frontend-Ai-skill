@@ -95,7 +95,7 @@ Other AI websites may accept instructions or knowledge uploads, but each service
 - [Scroll storytelling](skills/scroll-storytelling/SKILL.md) — narrative page structure and purposeful motion.
 - [Design exploration](skills/design-exploration/SKILL.md) — optional canvas workflows with approval and security safeguards.
 
-See [FEATURE_IDEAS.txt](FEATURE_IDEAS.txt) for 19 proposed improvements based on common user needs and agent failure modes. They are hypotheses to validate, not analytics findings.
+See [FEATURE_IDEAS.txt](FEATURE_IDEAS.txt) for 18 proposed improvements based on common user needs and agent failure modes. They are hypotheses to validate, not analytics findings.
 
 ## Verify the install
 
