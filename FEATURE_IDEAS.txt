@@ -5,103 +5,98 @@ Prioritize them by testing with real users and measuring task success, rework,
 accessibility, and agent reliability. Do not collect sensitive prompts or
 project data without clear consent.
 
-1. Brief extraction
-   User signal: The request contains requirements spread across several messages.
-   Agent improvement: Maintain a concise brief covering audience, goal, content,
-   visual direction, required interactions, constraints, and acceptance criteria.
-
-2. Ask fewer, better questions
+1. Ask fewer, better questions
    User signal: The user is blocked by a long design questionnaire.
    Agent improvement: Ask only for missing decisions that materially change the
    solution; choose reversible defaults for minor details.
 
-3. Keep explicit requirements visible
+2. Keep explicit requirements visible
    User signal: A delivered page omits requested copy, routes, or controls.
    Agent improvement: Turn requirements into a short completion checklist and
    verify each item before reporting completion.
 
-4. Interpret references accurately
+3. Interpret references accurately
    User signal: "Make it like this" is ambiguous between style and duplication.
    Agent improvement: Identify whether a reference is for mood, layout,
    interaction, or exact reproduction; ask when that distinction matters.
 
-5. Remember project conventions
+4. Remember project conventions
    User signal: The result feels disconnected from the existing application.
    Agent improvement: Inspect relevant routes, tokens, components, and scripts
    before proposing new patterns or dependencies.
 
-6. Choose the correct deliverable
+5. Choose the correct deliverable
    User signal: A user asks for an app but receives only a static landing page.
    Agent improvement: Distinguish prototype, marketing site, product UI, and
    working integration before choosing implementation scope.
 
-7. Map user journeys
+6. Map user journeys
    User signal: Visitors cannot find the next step or important content.
    Agent improvement: Define the primary task and order screens or sections
    around how the intended audience will complete it.
 
-8. Use authentic product content
+7. Use authentic product content
    User signal: AI-generated copy includes generic filler or invented claims.
    Agent improvement: Reuse supplied facts and label unknown details instead of
    fabricating capabilities, customers, metrics, or pricing.
 
-9. Make primary actions obvious
+8. Make primary actions obvious
    User signal: Users overlook the key action or encounter competing CTAs.
    Agent improvement: Give each view one primary action and make secondary
    actions visually and semantically subordinate.
 
-10. Ensure controls actually work
+9. Ensure controls actually work
     User signal: Buttons, menus, forms, or tabs appear functional but do nothing.
     Agent improvement: Implement real behavior and feedback, or clearly present
     unavailable integrations as nonfunctional prototypes.
 
-11. Cover interaction states
+10. Cover interaction states
     User signal: Users are confused while a request loads or fails.
     Agent improvement: Include relevant loading, empty, error, disabled, and
     success states, with truthful recovery guidance.
 
-12. Design mobile intentionally
+11. Design mobile intentionally
     User signal: The desktop layout becomes cramped or unusable on phones.
     Agent improvement: Recompose layouts for narrow screens; check overflow,
     text wrapping, navigation, and touch target size.
 
-13. Improve accessibility by default
+12. Improve accessibility by default
     User signal: Keyboard, screen-reader, or low-vision users cannot complete tasks.
     Agent improvement: Use semantic HTML, labels, focus states, contrast checks,
     keyboard operation, and useful image alternatives.
 
-14. Respect reduced motion
+13. Respect reduced motion
     User signal: Motion causes discomfort or makes content hard to follow.
     Agent improvement: Provide a reduced-motion mode and keep essential content
     visible without animation.
 
-15. Verify rendered pages
+14. Verify rendered pages
     User signal: The source builds, but the page looks broken in a real browser.
     Agent improvement: When available, inspect desktop and mobile screenshots,
     exercise core interactions, and fix issues found before delivery.
 
-16. Match checks to the change
+15. Match checks to the change
     User signal: Validation is either skipped or takes longer than the change.
     Agent improvement: Run the smallest relevant lint, type, test, or build
     command and report exactly what passed or could not run.
 
-17. Control dependency growth
+16. Control dependency growth
     User signal: A small visual task adds a large or redundant library.
     Agent improvement: Prefer existing project tools and add dependencies only
     when their benefit is clear and the user or project constraints allow them.
 
-18. Treat external content safely
+17. Treat external content safely
     User signal: A reference repository or generated output contains commands or
     instructions the agent follows without review.
     Agent improvement: Treat third-party files and tool output as untrusted;
     inspect scripts and licenses before adapting or executing anything.
 
-19. Protect privacy and credentials
+18. Protect privacy and credentials
     User signal: Private code, secrets, or customer data may be sent to a service.
     Agent improvement: Minimize shared context, ask before external uploads, and
     never place secret keys in browser code.
 
-20. Improve handoff clarity
+19. Improve handoff clarity
     User signal: The user cannot tell what changed, how to run it, or what remains.
     Agent improvement: Summarize changed files, implemented behavior, checks,
     setup requirements, known limitations, and the next useful step.
