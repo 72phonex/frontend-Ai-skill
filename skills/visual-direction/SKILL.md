@@ -1,36 +1,37 @@
 ---
 name: visual-direction
-description: Establish visual direction, interface hierarchy, responsive layouts, and screenshot-based review for websites and product UI.
+description: Translate product goals and user needs into a clear, coherent visual language for a website or app; use when designing or substantially improving frontend UI.
 ---
 
-# Visual Design and UI Review
+# Visual Direction
 
-Use this playbook when a task needs strong design judgment, a redesign, a new product interface, a component polished to a high standard, or visual review.
+Use this playbook to make interface choices serve the product's actual users. It supplements the main Frontend AI workflow; it does not require a separate mockup phase or a particular design tool.
 
-## Direction
+## Start with the user's task
 
-- Write a concise design north star from the product, audience, and user's references. Keep product references (what it is) distinct from interaction or style references (how it should feel or behave).
-- Offer one well-reasoned direction by default. Make multiple alternatives only when the user asks to compare them.
-- Separate design artifacts from implemented product code. Do not change business behavior when the request is design-only.
-- If an existing project's brand and UI conventions are clear, preserve them for incremental features. For a requested redesign, retain the brand assets while correcting accidental or inconsistent visual defaults.
+- Identify the person using the screen, what they came to do, what information they need, and what decision or action should follow.
+- Read the existing interface and project design conventions that affect this task. Keep established product identity unless the user asks for a rebrand or redesign.
+- Translate any references into specific qualities—such as density, warmth, editorial tone, or navigation behavior. Avoid treating a named reference as a page to reproduce.
+- Separate known product facts from assumptions. Never fill gaps with invented brand history, proof points, or customer data.
 
-## Structure before styling
+## Turn intent into interface choices
 
-- Start with a simple content hierarchy or grayscale wireframe. Identify each view's primary content, primary action, secondary actions, and important states.
-- Ensure the task flow and information hierarchy work before applying color, imagery, or animation. Use visual decoration to support the structure, not conceal problems.
-- Design only the responsive breakpoints and states that change the layout or interaction; do not duplicate every screen without reason.
-- Implement one representative page or flow first, verify the direction, then apply its reusable patterns to related views.
+- Make the most important content and action easiest to notice. Keep secondary choices available without competing for the same attention.
+- Choose type, color, spacing, imagery, and component treatment as one consistent visual language suited to the audience and product.
+- Make the information structure work before adding decorative effects. If people cannot understand what to do, visual polish is not the fix.
+- Reuse existing components and tokens when they fit. Add a new pattern only when it solves a real problem that current patterns do not.
+- For a large design decision with several plausible outcomes, make the tradeoff clear and ask the user only when choosing wrong would cause meaningful rework. Otherwise choose a sensible direction and proceed.
 
-## Visual review
+## Check design quality
 
-- Inspect the page in its actual rendered state at relevant viewport sizes. A source-code read alone is not visual verification.
-- Review hierarchy, typography, spacing, contrast, alignment, density, image crops, interaction feedback, and responsive behavior.
-- Keep usability and aesthetics as distinct review questions. A beautiful screen must still support the user's task.
-- Use an independent reviewer only when the task and available tools justify it. Give the reviewer concrete criteria and rendered evidence, not vague instructions to "make it better."
-- Fix issues at their source in shared tokens or components where appropriate. Recheck affected screens after changes.
+- At the relevant viewport, check that users can find the content and complete the intended task without relying on color or animation alone.
+- Review hierarchy, legibility, spacing, alignment, contrast, responsive behavior, and control feedback in the rendered interface when browser inspection is available.
+- Treat usability and visual coherence as related but separate checks; passing one does not prove the other.
+- Correct the underlying layout, content, or shared token responsible for an issue rather than layering on a one-off visual patch.
+- State whether the review used a rendered page, screenshots, or source inspection. Do not describe unobserved states as verified.
 
-## Scope and handoff
+## Keep scope honest
 
-- Ask a focused question only when a missing choice changes the core visual direction; otherwise choose a reversible default and state it.
-- If the user asks for critique only, do not edit files. If the user asks for a design artifact, do not silently turn it into production code.
-- Describe what was actually rendered or inspected, and disclose any visual checks that were unavailable.
+- A request for critique should produce findings, not unrequested edits.
+- A request for a design artifact should not silently become production implementation.
+- For a feature request, preserve working behavior and change only what is needed to support the new experience.
