@@ -95,6 +95,8 @@ Other AI websites may accept instructions or knowledge uploads, but each service
 - [Scroll storytelling](skills/scroll-storytelling/SKILL.md) — narrative page structure and purposeful motion.
 - [Design exploration](skills/design-exploration/SKILL.md) — optional canvas workflows with approval and security safeguards.
 
+See [FEATURE_IDEAS.txt](FEATURE_IDEAS.txt) for 20 proposed improvements based on common user needs and agent failure modes. They are hypotheses to validate, not analytics findings.
+
 ## Verify the install
 
 Start a new session and ask the agent to build or improve a frontend from a short brief. In VS Code, confirm `/frontend-ai` appears in the skill menu; in Claude Code use `/frontend-ai`; in Codex use `$frontend-ai`. If it is missing, check the install path, make sure `SKILL.md` is directly inside the `frontend-ai` folder, and restart the agent.
